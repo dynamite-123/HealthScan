@@ -88,7 +88,7 @@ def merge_texts(texts: List[str], separator: str = "\n\n---\n\n") -> str:
 class MarkupAgent:
     def __init__(self):
         self.model = GeminiModel(
-            "gemini-2.0-flash",
+            "gemini-2.5-flash",
             provider=GoogleGLAProvider(
                 api_key=str(os.getenv("GEMINI_API_KEY")),
             ),
@@ -133,7 +133,7 @@ class MarkupAgent:
 class ResumeVerifierAgent:
     def __init__(self):
         self.model = GeminiModel(
-            "gemini-2.0-flash",
+            "gemini-2.5-flash",
             provider=GoogleGLAProvider(
                 api_key=str(os.getenv("GEMINI_API_KEY")),
             ),
@@ -219,7 +219,7 @@ class ResumeVerifierAgent:
 class OcrAgent:
     def __init__(self):
         self.model = GeminiModel(
-            "gemini-2.0-flash",
+            "gemini-2.5-flash",
             provider=GoogleGLAProvider(
                 api_key=str(os.getenv("GEMINI_API_KEY")),
             ),
